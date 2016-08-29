@@ -19,5 +19,16 @@ int main(int argc, char *argv[]) {
 	printf("[\t\tAddress of <fillbuff>\t\t] = %p\n", &fillbuff);
 	add(1,2);
 	fillbuff(argv[1]);
+	somefunc(5);
 	return 0;
 }
+
+int somefunc(int x){
+	
+	printf("I am now in function somefunc\n");
+	int sum = x + 1;
+	printf("Sum is %d\n",sum);
+	return sum;
+}
+	
+
